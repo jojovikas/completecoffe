@@ -1,0 +1,506 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+
+    
+}
+.body {
+    background-color: #fffbf2;
+}
+
+
+
+
+.section{
+    width: 100%;
+    
+    background-color: black;
+}
+
+.section h2 {
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    /* padding: 2% 6%; */
+    align-items: center;
+}
+
+
+nav img{
+    width: 200px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px;
+}
+
+
+
+.nav-links ul li::after{
+ 
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: yellow;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+nav .fa{
+    display: none;
+}
+
+@media (max-width: 700px){
+   
+    .nav-links ul li{
+     display: block;
+    }
+    .nav-links  {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+    
+    
+}
+
+
+
+/* ===============================================about-us============================================ */
+
+
+.verticle-line {
+    width: 3px;
+    height: 100px;
+    background-color: #d89f5a;
+}
+
+
+
+.about-us h3 {
+    color: #d1a564;
+    font-size: 25PX;
+    font-weight: 500;
+}
+
+.about-us h2 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.about-us h1 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+
+.about-us .button1 {
+    width: 40%;
+    color: white;
+    border: none;
+    background-color: black;
+}
+
+
+
+
+.about-us .fa-check {
+    color: #d89f5a;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+.about-us .button2 {
+    width: 40%;
+    height: ;
+    color: white;
+    border: none;
+    background-color: #d89f5a;
+}
+
+
+
+/* ===============================================service============================================ */
+
+.our-services .service-img1 {
+    height: 100vh;
+
+}
+
+
+.service-icon{
+    display: flex;
+}
+
+.our-services .fa-truck, .fa-coffee, .fa-certificate, .fa-table{
+font-size: 20px;
+background-color: #d89f5a;
+padding: 15px;
+/* border-radius: 10rem; */
+}
+
+
+
+/* <!-- ============================= 50% off ======================== --> */
+
+.offer{
+    background-image: url('/img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    /* opacity: 50%; */
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offertext{
+    background-color: darkgreen;
+    padding: 20px 100px;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+
+    
+}
+.offertext h1 {
+    font-size: 80px;
+    font-weight: bold;
+
+}
+
+
+.offertext h2 {
+    
+    font-weight: 600;
+
+}
+
+.offer input {
+    height: 50px;
+    padding: 20px;
+    outline: none;
+}
+
+
+.offer button {
+    width: 120px;
+    padding: 5px;
+    background-color: black;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+/* <!-- ============================= MENU & PRICING start======================== --> */
+
+
+.menu-pricing {
+    box-sizing: border-box;
+}
+
+.menu-pricing .pricebox{
+    position: relative;
+    padding: 20px;
+    box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.menu-pricing .pricebox .coffeimg{
+    overflow: hidden;
+    width: 200px;
+
+    border-radius: 50%;
+}
+ 
+
+.menu-pricing .pricebox .coffee-info{
+
+    padding-left: 20px;
+}
+ 
+.menu-pricing .pricebox .coffee-info h3 {
+
+    font-weight: 600;
+}
+
+.menu-pricing .pricebox .coffee-info button {
+
+    padding: 2px 25px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+/* <!-- ============================= book table and form======================== --> */
+
+
+.book-table {
+    background-color: black;
+}
+
+.online-resevation1{
+    background-color: black;
+   
+       
+   }
+
+
+.online-resevation2{
+ color: white;
+ padding: 20px 50px;
+
+    
+}
+
+  
+   .online-resevation2 h1{
+    font-size: 70px;
+    font-weight: 600;
+
+   }
+    
+   .online-resevation2 h3{
+        font-weight: 600;
+    
+   }
+
+
+   /* form */
+
+
+   .book-table .myfrom{
+    padding: 40px 40px;
+    background-color: white;
+   }
+
+   .book-table .myfrom h1{
+     text-align: center;
+     font-weight: 600;
+   }
+
+
+
+   .book-table .myfrom .frominput{
+    padding: 10px 20px;
+    margin: 7px;
+    width: 100%;
+    border: solid 2px #d1a564;
+    outline: #d1a564;
+   }
+
+   .book-table .myfrom .btn{
+    background-color: #d1a564;
+    font-size: 20px;
+    
+
+   }
+
+   /* <!-- ============================= book table and form end======================== --> */
+
+
+
+   /* <!-- ============================= start testimonial ======================== --> */
+
+   
+
+
+   
+      /* <!-- ============================= start testimonial ======================== --> */
+
+
+
+
+
+
+   /* css code for slider */
+
+
+
+   /* footer */
+   footer {
+	background: #101010;
+	padding: 86px 0;
+}
+.single-content {
+	text-align: center;
+	padding: 115px 0;
+}
+.single-box p {
+	color: #fff;
+	line-height: 1.9;
+}
+.single-box h3 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+}
+.single-box .card-area i {
+	color: #ffffff;
+	font-size: 20px;
+	margin-right: 10px;
+}
+.single-box ul {
+	list-style: none;
+	padding: 0;
+}
+.single-box ul li a {
+	text-decoration: none;
+	color: #fff;
+	line-height: 2.5;
+	font-weight: 100;
+}
+.single-box h2 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+}
+#basic-addon2 {
+	background: #fe1e4f;
+	color: #fff;
+}
+.socials i {
+	font-size: 18px;
+	margin-right: 15px;
+}
+@media (max-width: 767px) {
+	.single-box {
+		margin-bottom: 50px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.single-box {
+		margin-bottom: 50px;
+	}
+}
+   
+
+
+/* footer create by vikas */
+
+.footer {
+    margin: 10px 50px;
+    background-color: red;
+}
+
+
+/******************************************* Contact us page ********************************************/
+
+
+.contactsection .contactbox{
+    text-align: center;
+}
+
+
+.contactsection .contactbox h4 {
+    font-weight: bold;
+}
+
+
+/******************************************* Contact us page end ***************************************/
+
+
+/* google map */
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+  }
+  .map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+
+  /* contact page form */
+
+  .contactform .myfrom{
+    padding: 40px 40px;
+    background-color: white;
+   }
+
+   .contactform .myfrom h1{
+     text-align: center;
+     font-weight: 600;
+   }
+
+
+
+   .contactform .myfrom .frominput{
+    padding: 10px 20px;
+    margin: 7px;
+    width: 100%;
+    border: solid 2px #d1a564;
+    outline: #d1a564;
+   }
+
+   .contactform .myfrom .btn{
+    background-color: #d1a564;
+    font-size: 20px;
+    
+
+   }
